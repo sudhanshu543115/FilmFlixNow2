@@ -50,7 +50,7 @@ function Navbar() {
     if (query) {
       // Fetch results from the backend
       axios
-        .get(`http://localhost:4004/Movie?search=${query}`)
+        .get(`https://backend-eq2w.onrender.com/Movie?search=${query}`)
         .then((response) => {
           setSearchResults(response.data); // Update the search results state
         })
