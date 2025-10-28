@@ -14,7 +14,7 @@ function Login() {
 
   const onSubmit = async (data) => {
     try {
-      const res = await axios.post("http://localhost:4004/user/login", data);
+      const res = await axios.post("https://backend-eq2w.onrender.com/user/login", data);
       toast.success("Login Successful");
       localStorage.setItem("Users", JSON.stringify(res.data.user));
       reset(); // Clear the form fields
