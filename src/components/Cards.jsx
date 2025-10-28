@@ -16,7 +16,7 @@ function Cards({ item }) {
                src={item.main_image} //when available
               alt=""
               className="w-20 h-20 rounded object-cover rounded-l-lg"
-              onError={(e) => (e.target.src = {img})}
+              onError={(e) => (e.target.src = img)}
             />
           </div>
 
