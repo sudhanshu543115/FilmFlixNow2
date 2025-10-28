@@ -20,7 +20,7 @@ function MovieDetails() {
   useEffect(() => {
     const fetchMovieDetails = async () => {
       try {
-        const res = await axios.get(`https://backend-n5by.onrender.com/Movie/${id}`);
+        const res = await axios.get(`https://backend-eq2w.onrender.com/Movie/${id}`);
         setMovie(res.data);
       } catch (err) {
         console.error(err);
